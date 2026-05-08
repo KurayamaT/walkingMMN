@@ -1,0 +1,47 @@
+walking_MMN_reanalysis run info
+================================
+date: 08-May-2026 09:11:27
+data_dir: /Users/ronbuntoukouyou/Documents/MATLAB/EEG&walking/raw_data/sitting_mat
+output_dir: /Users/ronbuntoukouyou/Documents/MATLAB/walkingMMN/sitting/reanalysis_20260508_091039
+ref_method: common_avg
+N files: 24
+Fs: 1024 Hz
+epoch: 50 ms pre, 450 ms post, total 513 samples
+baseline: -50 to 0 ms
+filters: 50 Hz notch (BW order 4), 1-20 Hz bandpass (BW order 4)
+rejection: |EEG ch1-32| > 100 uV OR |filtered EOG| > 100 uV
+elapsed: 40.8 sec
+
+time windows:
+  P50: 40-80 ms
+  N1: 80-130 ms
+  MMN_classic: 130-200 ms
+  MMN_late: 150-250 ms
+  P3a: 180-280 ms
+
+per-file diagnostics:
+filename                                              n_std    n_dev
+anna_sitting.mat                                         58       12
+fnamerB.mat                                               0        0
+goto_sitting.mat                                        947      190
+hiramoto_sitting.mat                                    839      159
+hirano2_sitting.mat                                     867      177
+hirano_sitting.mat                                      834      188
+isoda_sitting.mat                                       752      134
+kenta_sitting.mat                                       954      187
+koga_sitting.mat                                        471       90
+kurayama_sitting.mat                                   1007      231
+murakami_sitting.mat                                    750      139
+nagao2_sitting.mat                                      945      191
+nakamura_sitting.mat                                    856      195
+noguchi_sitting.mat                                     906      171
+sasaya_sitting.mat                                      978      197
+suto_sitting.mat                                        971      186
+tadokoro_sitting.mat                                   1012      190
+taguchi_sitting.mat                                     966      198
+takashi_sitting.mat                                     964      194
+takeuchi_sitting.mat                                    988      227
+terada_sitting.mat                                      709      130
+uza_sitting.mat                                         694      157
+yamashita_sitting.mat                                   991      222
+yasuyuki_sitting.mat                                    999      190

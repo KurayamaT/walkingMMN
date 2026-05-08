@@ -1,0 +1,48 @@
+walking_MMN_reanalysis run info
+================================
+date: 08-May-2026 09:24:22
+data_dir: /Users/ronbuntoukouyou/Documents/MATLAB/EEG&walking/raw_data/water_mat
+output_dir: /Users/ronbuntoukouyou/Documents/MATLAB/walkingMMN/water_walking/reanalysis_20260508_092333
+ref_method: common_avg
+N files: 25
+Fs: 1024 Hz
+epoch: 50 ms pre, 450 ms post, total 513 samples
+baseline: -50 to 0 ms
+filters: 50 Hz notch (BW order 4), 1-20 Hz bandpass (BW order 4)
+rejection: |EEG ch1-32| > 100 uV OR |filtered EOG| > 100 uV
+elapsed: 45.1 sec
+
+time windows:
+  P50: 40-80 ms
+  N1: 80-130 ms
+  MMN_classic: 130-200 ms
+  MMN_late: 150-250 ms
+  P3a: 180-280 ms
+
+per-file diagnostics:
+filename                                              n_std    n_dev
+anna_water.mat                                          421       88
+goto_water.mat                                          946      206
+hiramoto_water.mat                                      981      209
+hirano2_water.mat                                       807      156
+hirano_water.mat                                        823      165
+isoda_water.mat                                         733      148
+kenta_water.mat                                         894      188
+koga_water.mat                                          527       96
+kurayama_water.mat                                     1026      210
+murakami_water.mat                                      780      151
+nagao2_water.mat                                        966      224
+nakamura_water.mat                                      735      156
+noguchi_water.mat                                       865      169
+numata_water.mat                                        694      138
+sasaya_water.mat                                        989      206
+suto_water.mat                                          849      185
+tadokoro_water.mat                                     1017      183
+taguchi_water.mat                                      1021      175
+takashi_water.mat                                       966      196
+takeuchi_water.mat                                      968      225
+tani2_water.mat                                         766      160
+terada_water.mat                                        857      191
+uza_water.mat                                           788      165
+yamashita_water.mat                                     997      212
+yasuyuki_water.mat                                      930      200

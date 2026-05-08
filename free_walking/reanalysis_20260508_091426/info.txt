@@ -1,0 +1,48 @@
+walking_MMN_reanalysis run info
+================================
+date: 08-May-2026 09:16:14
+data_dir: /Users/ronbuntoukouyou/Documents/MATLAB/EEG&walking/raw_data/free_mat
+output_dir: /Users/ronbuntoukouyou/Documents/MATLAB/walkingMMN/free_walking/reanalysis_20260508_091426
+ref_method: common_avg
+N files: 25
+Fs: 1024 Hz
+epoch: 50 ms pre, 450 ms post, total 513 samples
+baseline: -50 to 0 ms
+filters: 50 Hz notch (BW order 4), 1-20 Hz bandpass (BW order 4)
+rejection: |EEG ch1-32| > 100 uV OR |filtered EOG| > 100 uV
+elapsed: 100.4 sec
+
+time windows:
+  P50: 40-80 ms
+  N1: 80-130 ms
+  MMN_classic: 130-200 ms
+  MMN_late: 150-250 ms
+  P3a: 180-280 ms
+
+per-file diagnostics:
+filename                                              n_std    n_dev
+anna_free.mat                                           571      136
+goto_free.mat                                           536      105
+hiramoto_free.mat                                       729      160
+hirano2_free.mat                                        765      158
+hirano_free.mat                                         690      151
+isoda_free.mat                                          478       92
+kenta_free.mat                                          897      185
+koga_free.mat                                           667      139
+kurayama_free.mat                                      1032      188
+murakami_free.mat                                       698      125
+nagao2_free.mat                                         908      188
+nakamura_free.mat                                       645      132
+noguchi_free.mat                                        862      200
+numata_free.mat                                         627      139
+sasaya_free.mat                                         989      181
+suto_free.mat                                           910      142
+tadokoro_free.mat                                      1024      202
+taguchi_free.mat                                        938      210
+takashi_free.mat                                       1010      169
+takeuchi_free.mat                                       958      211
+tani2_free.mat                                          844      159
+terada_free.mat                                         555      126
+uza_free.mat                                            616      126
+yamashita_free.mat                                     1002      210
+yasuyuki_free.mat                                       788      131

@@ -1,0 +1,50 @@
+walking_MMN_reanalysis run info
+================================
+date: 08-May-2026 09:20:39
+data_dir: /Users/ronbuntoukouyou/Documents/MATLAB/EEG&walking/raw_data/nenndo_mat
+output_dir: /Users/ronbuntoukouyou/Documents/MATLAB/walkingMMN/nenndo_walking/reanalysis_20260508_091937
+ref_method: common_avg
+N files: 27
+Fs: 1024 Hz
+epoch: 50 ms pre, 450 ms post, total 513 samples
+baseline: -50 to 0 ms
+filters: 50 Hz notch (BW order 4), 1-20 Hz bandpass (BW order 4)
+rejection: |EEG ch1-32| > 100 uV OR |filtered EOG| > 100 uV
+elapsed: 55.9 sec
+
+time windows:
+  P50: 40-80 ms
+  N1: 80-130 ms
+  MMN_classic: 130-200 ms
+  MMN_late: 150-250 ms
+  P3a: 180-280 ms
+
+per-file diagnostics:
+filename                                              n_std    n_dev
+anna_nenndo.mat                                         319       62
+goto_nenndo.mat                                         654      123
+hiramoto_nenndo.mat                                     755      163
+hirano2_nenndo.mat                                      621      124
+hirano_nenndo.mat                                       708      166
+isoda_nenndo.mat                                        462       80
+kenta_nenndo.mat                                        956      205
+koga_nenndo.mat                                         627      125
+kurayama_nenndo.mat                                    1046      192
+matlab.mat                                              960      196
+murakami_nenndo.mat                                     516       96
+nagao2_nenndo.mat                                       859      201
+nakamura_nenndo.mat                                     613      140
+nenndo.mat                                              960      196
+noguchi_nenndo.mat                                      839      156
+numata_nenndo.mat                                       584       85
+sasaya_nenndo.mat                                       893      182
+suto_nenndo.mat                                         740      173
+tadokoro_nenndo.mat                                     988      190
+taguchi_nenndo.mat                                      982      193
+takashi_nenndo.mat                                      942      211
+takeuchi_nenndo.mat                                     929      186
+tani2_nenndo.mat                                        780      162
+terada_nenndo.mat                                       625      145
+uza_nenndo.mat                                          642      109
+yamashita_nenndo.mat                                    993      169
+yasuyuki_nenndo.mat                                     960      196
