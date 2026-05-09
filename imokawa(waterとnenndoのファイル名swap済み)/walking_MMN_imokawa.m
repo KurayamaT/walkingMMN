@@ -1,3 +1,4 @@
+
 function walking_MMN_imokawa()
 % walking_MMN_imokawa.m  (CORRECTED based on user's original 1778221030855_imokawa_walking_MMN.m)
 %
@@ -277,15 +278,29 @@ writetable(ind_table, fullfile(out_subdir, 'topo_indicators.csv'));
 
 group_csv = fullfile(output_dir, 'group_summary.csv');
 if exist(group_csv, 'file')
-    existing = readtable(group_csv);
-    common_cols = intersect(existing.Properties.VariableNames, ...
-                             ind_table.Properties.VariableNames);
-    if length(common_cols) == width(existing)
-        ind_subset = ind_table(:, common_cols);
-        ind_subset.Properties.VariableNames = existing.Properties.VariableNames;
-        combined = [existing; ind_subset];
-        writetable(combined, group_csv);
-    else
+    try
+        existing = readtable(group_csv);
+        new_vars = ind_table.Properties.VariableNames;
+        for vi = 1:length(new_vars)
+            v = new_vars{vi};
+            if any(strcmp(existing.Properties.VariableNames, v))
+                if iscell(existing.(v)) && isnumeric(ind_table.(v))
+                    existing.(v) = cellfun(@(x) str2double(string(x)), existing.(v));
+                end
+            end
+        end
+        common_cols = intersect(existing.Properties.VariableNames, new_vars);
+        if length(common_cols) == width(existing)
+            ind_subset = ind_table(:, common_cols);
+            ind_subset.Properties.VariableNames = existing.Properties.VariableNames;
+            combined = [existing; ind_subset];
+            writetable(combined, group_csv);
+        else
+            writetable(ind_table, group_csv);
+        end
+    catch ME
+        warning('Could not append to %s (%s). Writing fresh file.', ...
+            group_csv, ME.message);
         writetable(ind_table, group_csv);
     end
 else
